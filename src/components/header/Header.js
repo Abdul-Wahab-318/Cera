@@ -7,9 +7,13 @@ import heart from '../../assets/heart.svg';
 import chat from '../../assets/conversation.svg';
 import dollar from '../../assets/dollar.svg'
 import cross from '../../assets/x-mark.svg'
+import menuCross from '../../assets/cancel.svg';
 function Header()
 {
-    
+    let replaceMenuIcon = ()=>{
+       let navbarToggler = document.querySelector('#navbarToggler');
+       navbarToggler.classList.toggle('navbar-toggler-cross-icon');
+    }
     return(
         <header>
             <div className="header-parent">
@@ -17,8 +21,8 @@ function Header()
                 <nav className="navbar navbar-expand-lg navbar-light ">
                     <div className="container-fluid">
                         <button className="navbar-brand" href="#"><img src={logo} alt="" /></button>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                        <button className="navbar-toggler" onClick={replaceMenuIcon}   type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                        <span className="navbar-toggler-icon" id="navbarToggler"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">

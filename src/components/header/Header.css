@@ -128,6 +128,14 @@ button{
     height: 1500px;
     background: black;
 }
+.navbar-toggler-cross-icon{
+    background-image: url(../../assets/cancel.svg) !important;
+    background-size: 17px !important;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../../assets/menu.svg);
+    background-size: 24px;
+}
 
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
@@ -267,271 +275,13 @@ button{
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-    *{
-        font-family: 'Roboto', sans-serif;
-    }
-    button{
-        all: unset;
-    }
-    .header-parent{
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    .header-parent .header-inner .navbar .container-fluid{
-        padding: 0 3%;
-    }
-    .navbar{
-        background-color: var(--navBg);
-        padding: unset;
-    
-    }
-    .navbar-brand{
-        padding: unset;
-        margin: unset;
-    }
-    .navbar-brand img{
-        width: 70px;
-        transition: all 350ms ease;
-    }
-    .navbar-brand img:hover{
-        opacity: 0.8;
-    }
-    .navbar-nav .nav-item .nav-link img{
-        width: 12px;
-        margin-left: 8px;
-    }
-    .navbar-nav .nav-item .nav-link{
-        display: flex;
-        color:  var(--white);
-        padding: 26px 12px;
-        font-size: 14.5px;
-        font-weight: 500;
-    }
-    
-    .navbar-nav .nav-item .active{
-        
-        color: var(--white) !important;
-    }
-    .navbar-nav .nav-item:hover .nav-link{
-        color: white !important;
-    }
-    .nav-item:hover .sub-menu{
-        opacity: 1;
-        display: block;
-    }
-    .nav-item .sub-menu{
-        z-index: 10;
-        display: none;
-        transition: all 330ms ease;
-        list-style: none;
-        margin-bottom: unset;
-        padding-left: unset;
-        background-color: var(--navSubMenu);
-        position: absolute;
-        border-bottom-left-radius: 6px ;
-        border-bottom-right-radius: 6px ;
-        padding: 5px 5px;
-    }
-    .nav-item .sub-menu li button img{
-        width: 14px;
-        margin-right: 10px;
-    }
-    .nav-item .sub-menu li button:hover{
-        background-color: var(--white);
-        color: var(--navBg);
-    }
-    .nav-item .sub-menu li button{
-        color: var(--white);
-        font-size: 14px;
-        font-weight: 500;
-        max-width: 200px;
-        min-width: 160px;
-        padding: 5px 10px;
-        border-radius: 6px;
-        margin-bottom: 5px;
-        transition: all 250ms ease;
-        display: flex;
-        align-items: center;
-    }
-    .nav-item .sub-menu li:last-child button {
-        margin-bottom: 0;
-    }
-    .sub-menu-inner{
-        position: relative;
-    }
-    .sub-menu-inner > img{
-        position: absolute;
-        width: 12px;
-        top: 10px;
-        right: 5px;
-        transform: rotate(-90deg);
-    }
-    .sub-menu-inner:hover .sub-menu{
-        display: block !important;
-    }
-    .sub-menu-inner .sub-menu{
-        display: none !important;
-        border-top-right-radius: 6px;
-        position: absolute;
-        top: -5px;
-        left: 100%;
-    }
-    
-    
-    .login-btn{
-        color: var(--white);
-        font-size: 14.4px;
-        font-weight: 500;
-        padding: 7px 22px;
-        border-radius: 5px;
-        border: 2px solid var(--navLoginBtnBorder);
-        transition: all 400ms ease;
-    }
-    .login-btn:hover{
-        border: 2px solid var(--white);
-    }
-    
-    .test{
-        width: 100%;
-        height: 1500px;
-        background: black;
-    }
+
     
 }
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-    *{
-        font-family: 'Roboto', sans-serif;
-    }
-    button{
-        all: unset;
-    }
-    .header-parent{
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    .header-parent .header-inner .navbar .container-fluid{
-        padding: 0 3%;
-    }
-    .navbar{
-        background-color: var(--navBg);
-        padding: unset;
+@media (min-width: 992px) and (max-width: 1199.98px) { 
     
-    }
-    .navbar-brand{
-        padding: unset;
-        margin: unset;
-    }
-    .navbar-brand img{
-        width: 70px;
-        transition: all 350ms ease;
-    }
-    .navbar-brand img:hover{
-        opacity: 0.8;
-    }
-    .navbar-nav .nav-item .nav-link img{
-        width: 12px;
-        margin-left: 8px;
-    }
-    .navbar-nav .nav-item .nav-link{
-        display: flex;
-        color:  var(--white);
-        padding: 26px 12px;
-        font-size: 14.5px;
-        font-weight: 500;
-    }
-    
-    .navbar-nav .nav-item .active{
-        
-        color: var(--white) !important;
-    }
-    .navbar-nav .nav-item:hover .nav-link{
-        color: white !important;
-    }
-    .nav-item:hover .sub-menu{
-        opacity: 1;
-        display: block;
-    }
-    .nav-item .sub-menu{
-        z-index: 10;
-        display: none;
-        transition: all 330ms ease;
-        list-style: none;
-        margin-bottom: unset;
-        padding-left: unset;
-        background-color: var(--navSubMenu);
-        position: absolute;
-        border-bottom-left-radius: 6px ;
-        border-bottom-right-radius: 6px ;
-        padding: 5px 5px;
-    }
-    .nav-item .sub-menu li button img{
-        width: 14px;
-        margin-right: 10px;
-    }
-    .nav-item .sub-menu li button:hover{
-        background-color: var(--white);
-        color: var(--navBg);
-    }
-    .nav-item .sub-menu li button{
-        color: var(--white);
-        font-size: 14px;
-        font-weight: 500;
-        max-width: 200px;
-        min-width: 160px;
-        padding: 5px 10px;
-        border-radius: 6px;
-        margin-bottom: 5px;
-        transition: all 250ms ease;
-        display: flex;
-        align-items: center;
-    }
-    .nav-item .sub-menu li:last-child button {
-        margin-bottom: 0;
-    }
-    .sub-menu-inner{
-        position: relative;
-    }
-    .sub-menu-inner > img{
-        position: absolute;
-        width: 12px;
-        top: 10px;
-        right: 5px;
-        transform: rotate(-90deg);
-    }
-    .sub-menu-inner:hover .sub-menu{
-        display: block !important;
-    }
-    .sub-menu-inner .sub-menu{
-        display: none !important;
-        border-top-right-radius: 6px;
-        position: absolute;
-        top: -5px;
-        left: 100%;
-    }
-    
-    
-    .login-btn{
-        color: var(--white);
-        font-size: 14.4px;
-        font-weight: 500;
-        padding: 7px 22px;
-        border-radius: 5px;
-        border: 2px solid var(--navLoginBtnBorder);
-        transition: all 400ms ease;
-    }
-    .login-btn:hover{
-        border: 2px solid var(--white);
-    }
-    
-    .test{
-        width: 100%;
-        height: 1500px;
-        background: black;
-    }
     
  }
 
@@ -545,10 +295,6 @@ button{
         border-color: transparent  !important; 
     }
 
-    .navbar-toggler .navbar-toggler-icon {
-       background-image: url(../../assets/menu.svg);
-       background-size: 24px;
-    }
     .navbar-collapse{
         display: flex;
         flex-direction: column-reverse;
@@ -571,48 +317,89 @@ button{
         text-align: center;
     }
  }
-@media (min-width: 768px) {
-    /*.header-parent .header-inner .navbar .container-fluid{
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 768px) {
+
+
+    .header-parent .header-inner .navbar .container-fluid{
         padding: 5px 15px;
     }
     .navbar-toggler{
         border-color: transparent  !important; 
     }
-
-    .navbar-toggler .navbar-toggler-icon {
-       background-image: url(../../assets/menu.svg);
-       background-size: 24px;
+    .navbar-nav .nav-item .nav-link img{
+        transform: rotate(-90deg);
     }
-    .navbar-collapse{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-    }
-    .navbar-nav{
-        width: 90%;
-        margin: 20px 0 !important;
-        flex-direction: row;
-
-        justify-content: space-between;
+    .navbar-nav .nav-item{
+        position: relative;
     }
     .navbar-nav .nav-item .nav-link{
-        padding: 10px 12px 10px 0;
+        padding-left: unset;
     }
-  
+    .nav-item .sub-menu{
+        top: 16px;
+        transform: translateY(-0%);
+        left: 120px;
+    }
+    .sub-menu-inner .sub-menu {
+        top: -5px;
+        left: 100%;
+    }
     .login-btn{
-        margin: 20px 0;
-        width: 90%;
         text-align: center;
+        display: block;
+        margin: 20px auto 20px auto;
+        width: 60%;
+
     }
-*/
   }
 
 
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {  }
+@media (max-width: 576px) {
 
+     .navbar-toggler{
+        border-color: transparent  !important; 
+    }
+    .header-parent .header-inner .navbar .container-fluid{
+        padding: 5px 15px;
+    }
 
+    .navbar-nav .nav-item .nav-link img{
+        transform: rotate(-90deg);
+    }
+    .navbar-nav .nav-item{
+        position: relative;
+    }
+    .navbar-nav .nav-item .nav-link{
+        padding-left: unset;
+    }
+    .nav-item .sub-menu{
+        top: 16px;
+        transform: translateY(-0%);
+        left: 110px;
+    }
+    .nav-item .sub-menu li button{
+        max-width: 120px;
+        min-width: 135px;
+    }
+    .sub-menu-inner .sub-menu {
+        top: 100%;
+        left: 00%;
+    }
+    .sub-menu-inner:hover{
+        margin-bottom: 110px;
+    }
+    .login-btn{
+        text-align: center;
+        display: block;
+        margin: 20px auto 20px auto;
+        width: 60%;
 
+    }
+}
 
 
 
