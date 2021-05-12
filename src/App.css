@@ -1,9 +1,14 @@
 :root{
   --navBg : #282733 ;
+  --leadText : #282733;
   --white : white ;
   --navLoginBtnBorder : rgba(255, 255, 255, 0.2);
   --navSubMenu : #252537;
   --navIcon : #ea3d56 ;
+  --red : #ea3d56;
+  --sectionBg : #f6f6f6 ;
+  --lightBlue : #6c7293;
+  --lightBlue2 : #48465b;
 }
 
 *{
@@ -15,4 +20,15 @@
   margin: 0 auto;
   max-width: 1400px;
   padding: 0 3%;
+}
+.custom-section-padding{
+  padding: 6% 0;
+}
+
+
+@media (max-width: 576px)
+{
+  .custom-section-padding{
+    padding: 50px 0;
+  }
 }
