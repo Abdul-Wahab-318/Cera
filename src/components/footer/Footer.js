@@ -12,7 +12,7 @@ export default function Footer() {
                     <div className="footer-main-inner">
                         <div className="footer-brand">
                             <button><img src={logo} alt="" /></button>
-                            <p>Welcome to Cera, the modern extranet <br /> and community platform</p>
+                            <p>Welcome to Cera, the modern extranet<br />and community platform</p>
                         </div>
                         <div className="footer-item">
                             <ul>

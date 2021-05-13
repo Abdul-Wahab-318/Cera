@@ -1,7 +1,7 @@
 .footer-parent{
     background-color: var(--red);
 }
-.custom-section-padding{
+.footer-parent .custom-section-padding{
     padding: 5% 0;
     border-bottom: 1px solid var(--navLoginBtnBorder);
 }
@@ -54,7 +54,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.footer-copyright p{
+.footer-copyright-inner p{
     margin-bottom: 0;
     color: var(--lightPink);
     font-size: 14px;
@@ -67,4 +67,96 @@
 }
 .footer-social-icons button img:hover{
     opacity: 0.7;
+}
+
+
+@media (min-width : 992px) and (max-width: 1199.9px)
+{
+    .footer-brand p{
+        font-size: 14px;
+    }
+    .footer-brand img{
+        width: 120px;
+    }
+    .footer-copyright{
+        padding: 25px 0;
+    }
+}
+
+@media (min-width : 768px) and (max-width: 991.8px){
+    .footer-brand p{
+        font-size: 16px;
+    }
+    .footer-main-inner{
+        display: grid;
+        gap: 41px;
+    }
+    .footer-brand{
+        grid-column: 1/ span 4;
+    }
+    .footer-copyright{
+        padding: 20px 0;
+    }
+}
+
+
+@media (min-width : 576px) and (max-width: 767.9px)
+{
+    .footer-parent .custom-section-padding{
+        padding: 45px 0;
+    }
+    .footer-brand{
+        text-align: center;
+    }
+    .footer-brand p{
+        margin-bottom: unset;
+    }
+    .footer-main-inner{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+        text-align: center;
+    }
+    .footer-copyright .custom-container{
+        padding: 25px 0;
+    }
+    .footer-copyright-inner{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .footer-copyright-inner p{
+        margin-bottom: 30px;
+    }
+}
+
+@media  (max-width: 575.8px) {
+    .footer-parent .custom-section-padding{
+        padding: 45px 0;
+    }
+    .footer-brand{
+        text-align: center;
+    }
+    .footer-brand p{
+        margin-bottom: unset;
+    }
+    .footer-main-inner{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+        text-align: center;
+    }
+    .footer-copyright .custom-container{
+        padding: 25px 0;
+    }
+    .footer-copyright-inner{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .footer-copyright-inner p{
+        margin-bottom: 30px;
+        padding: 0 15px;
+        text-align: center;
+    }
 }
