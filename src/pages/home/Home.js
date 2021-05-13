@@ -1,4 +1,5 @@
 import ActiveMemberCard from '../../components/activeMemberCard/ActiveMemberCard'
+import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
 import Hero from '../../components/hero/Hero'
 import LeadText from '../../components/leadText/LeadText'
@@ -32,6 +33,7 @@ function Home()
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

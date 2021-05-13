@@ -11,7 +11,7 @@ export default function ActiveMemberCard() {
             <button><h6 className="member-name">John Lars</h6></button>
             
             <div className="member-details">
-                <button><span>33 .</span> <span>Account manager </span></button>
+                <button><span>33 .</span> <span>Managing Director</span></button>
             </div>
         </div>
     )

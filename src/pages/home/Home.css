@@ -7,15 +7,18 @@
     display: grid;
     grid-template-columns: repeat(5,auto);
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
+    grid-gap: 30px;
 }
 
 
 
 
-
-
+@media (min-width : 992px) and (max-width: 1199.8px)
+{
+    .active-members-cards{
+        gap: 20px;
+    }
+}
 
 @media (min-width : 768px) and (max-width : 991.8px) {
     .active-members-cards{
