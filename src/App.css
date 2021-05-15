@@ -28,9 +28,25 @@
   padding: 6% 0;
 }
 
+@media (min-width : 786px) and (max-width: 991.9px)
+{
+  .custom-container{
+    padding: 0 15px;
+  }
+}
+
+@media (min-width : 576px) and (max-width: 767.8px)
+{
+  .custom-container{
+    padding: 0 15px;
+  }
+}
 
 @media (max-width: 576px)
 {
+  .custom-container{
+    padding: 0 15px;
+  }
   .custom-section-padding{
     padding: 50px 0;
   }

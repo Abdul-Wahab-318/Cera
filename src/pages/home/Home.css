@@ -93,7 +93,7 @@
 .reasons-cards-inner button p{
     font-size: 15px;
     color: var(--lightBlue);
-    padding: 0 10px;
+    padding: 0 8px;
     margin-bottom: 0;
 }
 /*REASON SECTION   REASON SECTION*/
@@ -140,6 +140,17 @@
     .active-members-cards{
         gap: 20px;
     }
+    /*REASONS SECTION REASONS SECTION*/
+    .reasons-cards-parent{
+        padding: 60px 130px;
+    }
+    .reasons-cards-inner button{
+        padding :70px 20px 30px 20px;
+    }
+    .reasons-cards-inner button p{
+        padding: 0 2px;
+    }
+    /*REASONS SECTION REASONS SECTION*/
 }
 
 @media (min-width : 768px) and (max-width : 991.8px) {
@@ -148,6 +159,21 @@
         grid-template-columns: repeat(2,auto) ;
         flex-wrap: wrap;
     }
+        /*REASONS SECTION REASONS SECTION*/
+        .reasons-heading h1{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .reasons-heading p{
+            font-size: 12px;
+        }
+        .reasons-cards-parent{
+            padding: 60px 0px;
+        }
+        .reasons-cards-inner h6{
+            font-size: 15px;
+        }
+        /*REASONS SECTION REASONS SECTION*/
     
 }
 
@@ -167,6 +193,47 @@
         margin-bottom: 30px;
         font-size: 18px;
     }
+    /*REASONS SECTION REASONS SECTION*/
+    .reasons-cards-parent{
+        padding: 60px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /*grid-template-columns: repeat(2,auto);
+        gap: 30px;*/
+
+    }
+    .reasons-cards-parent div:last-child{
+       margin:  0 auto;
+    }
+    .reasons-cards-inner{
+        max-width: 47% !important;
+        box-sizing: border-box;
+        
+    }
+    .reasons-cards-inner button{
+        padding: 24px 20px;
+    }
+    .reasons-cards-inner button .reasons-avatar{
+        position: unset;
+        transform: unset;
+        margin:  0 auto 20px auto;
+    }
+    .reasons-cards-inner button:hover div  {
+        transform:  scale(1.05);
+    }
+    .reasons-heading h1{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .reasons-heading p{
+        font-size: 12px;
+    }
+
+    .reasons-cards-inner h6{
+        font-size: 15px;
+    }
+    /*REASONS SECTION REASONS SECTION*/
     
 }
 
@@ -186,5 +253,36 @@
         margin-bottom: 30px;
         font-size: 18px;
     }
+    /*REASONS SECTION REASONS SECTION*/
+    .reasons .custom-section-padding{
+        padding: 50px 0;
+    }
+    .reasons-cards-parent{
+        padding: 40px 0 0 0;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fill,100%);
+    }
+    .reasons-cards-inner button .reasons-avatar{
+        position: unset;
+        transform: unset;
+        margin:  0 auto 20px auto;
+    }
+    .reasons-cards-inner button:hover div  {
+        transform:  scale(1.05);
+    }
+    .reasons-cards-inner button{
+        padding: 24px;
+    }
+    .reasons-heading h1{
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+    .reasons-heading p{
+        font-size: 12px;
+    }
+    .reasons-cards-inner h6{
+        font-size: 15px;
+    }
+    /*REASONS SECTION REASONS SECTION*/
     
 }
