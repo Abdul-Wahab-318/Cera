@@ -15,6 +15,7 @@
     margin: 0;
     position: relative;
     transition: all 200ms ease;
+    color: var(--leadText);
 }
 
 .lead-text-parent button::after{

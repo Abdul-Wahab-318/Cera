@@ -1,0 +1,40 @@
+/*PROFILE WALLPAPER SECTION*/
+.profile-wallpaper-parent{
+ 
+    margin-top: 70px;
+    background-image: url('../../assets/geopattern.png');
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;padding: 100px 0 30px 0;
+}
+.custom-container{
+    box-sizing: border-box;
+    max-width: 1400px;
+    padding: 0 15px;
+}
+.profile-wallpaper-inner-content{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-profile-img{
+    box-sizing: border-box;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 8px solid var(--white);
+}
+.user-profile-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.user-name{
+    margin-left: 30px;
+}
+/*PROFILE WALLPAPER SECTION*/

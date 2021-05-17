@@ -4,10 +4,12 @@
 button{
     all: unset;
 }
+
 .header-parent{
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
+    z-index: 3;
 }
 .header-parent .header-inner .navbar .container-fluid{
     padding: 0 3%;

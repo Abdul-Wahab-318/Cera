@@ -1,5 +1,5 @@
 .hero-parent{
-    
+    margin-top: 70px;
     background-image: url(../../assets/hero.jpg);
     background-size: 2200px;
     background-repeat: no-repeat;
@@ -26,6 +26,9 @@
 
 @media (min-width: 768px) and (max-width: 992px)
 {
+    .hero-parent{
+        margin-top: 49px;
+    }
     .hero-caption h1{
         font-size: 35px;
     }
@@ -35,8 +38,8 @@
 }
 
 @media (min-width : 576px) and (max-width : 768px) {
-    .hero-inner{
-
+    .hero-parent{
+        margin-top: 49px;
     }
     .hero-caption{
         text-align: center;
@@ -50,6 +53,9 @@
 
 @media (max-width : 576px )
 {
+    .hero-parent{
+        margin-top: 49px;
+    }
     .hero-inner{
         padding: 75px 0;
     }
