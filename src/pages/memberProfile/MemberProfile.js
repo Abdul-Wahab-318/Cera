@@ -96,6 +96,11 @@ function MemberProfile() {
                 <section className="help-center-parent">
                     <HelpCenter/>
                 </section>
+
+                <footer>
+                    <Footer/>
+                </footer>
+
             </div>
         </div>
     )
