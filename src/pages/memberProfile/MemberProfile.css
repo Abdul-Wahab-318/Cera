@@ -5,7 +5,8 @@
     background-image: url('../../assets/geopattern.png');
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: overlay;padding: 100px 0 30px 0;
+    background-blend-mode: overlay;
+    padding: 110px 0 30px 0;
 }
 .custom-container{
     box-sizing: border-box;
@@ -15,7 +16,7 @@
 .profile-wallpaper-inner-content{
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 .user-info{
@@ -36,5 +37,184 @@
 }
 .user-name{
     margin-left: 30px;
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 500;
+}
+.status-pill{
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: var(--red);
+    height: 20px;
+    line-height: 20px;
+    padding: 0 9px;
+    margin-left: 10px;
+    border-radius: 12px;
+}
+
+.profile-statistics ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: unset;
+    padding: unset;
+    overflow: hidden;
+}
+.profile-statistics ul li{
+    text-align: center;
+    margin: 0 26px;
+    color: var(--white);
+}
+.profile-statistics ul li h5{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-family: var(--open-sans);
+}
+.profile-statistics ul li span{
+    letter-spacing: 1px;
+    font-size: 11px;
+    font-weight: 600;
 }
 /*PROFILE WALLPAPER SECTION*/
+
+
+
+/*PROFILE CONTENT  PROFILE CONTENT*/
+
+/*-- PROFILE NAVBAR  PROFILE NAVBAR --*/
+.profile-navbar{
+    position: relative;
+    z-index: 2;
+    background-color: var(--white);
+    box-shadow: 0 10px 40px 1px rgba(158, 156, 156, 0.1);
+}
+.nav{
+    margin-bottom: unset !important;
+}
+
+.nav .nav-item  .active {
+    border-bottom: 4px solid var(--lightblue3) !important;
+}
+.nav .nav-item .nav-link{
+    font-family: var(--open-sans);
+    padding: 27px 25px;
+    color: var(--lightBlue2);
+    text-transform: uppercase;
+    font-size: 12.5px;
+    font-weight: 600;
+    border-bottom: 4px solid transparent;
+    background-color: transparent;
+    border-radius: unset;
+    display: flex;
+    align-items: center;
+}
+.nav .nav-item .nav-link img{
+    width: 14px;
+    margin-right: 10px;
+}
+
+
+
+/*-- PROFILE NAVBAR  PROFILE NAVBAR --*/
+
+
+
+/*-- PROFILE NAVBAR CONTENT   PROFILE NAVBAR CONTENT --*/
+.profile-navbar-content{
+    height: 500px;
+    background-color: var(--sectionBg);
+}
+
+
+
+
+/*-- PROFILE NAVBAR CONTENT   PROFILE NAVBAR CONTENT --*/
+
+/*PROFILE CONTENT  PROFILE CONTENT*/
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991.8px){
+    .profile-wallpaper-parent{
+        margin-top: 49px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.8px){
+    .profile-wallpaper-parent{
+        margin-top: 49px;
+        padding: 40px 0;
+    }
+    .profile-wallpaper-inner-content{
+        flex-direction: column;
+    }
+    .user-profile-img{
+        width: 130px;
+        height: 130px;
+        margin-bottom: 20px;
+    }
+    .user-info{
+        flex-direction: column;
+    }
+    .user-name{
+        margin: unset;
+    }
+    .profile-statistics{
+        margin-top: 20px;
+    }
+    .profile-statistics ul{
+        display: flex;
+        align-items: center;
+    }
+    .profile-statistics ul li{
+        margin: 0 24px;
+    }
+}
+
+
+@media (max-width: 575.8px){
+    .profile-wallpaper-parent{
+        margin-top: 49px;
+        padding: 40px 0;
+    }
+    .profile-wallpaper-inner-content{
+        flex-direction: column;
+    }
+    .user-profile-img{
+        width: 130px;
+        height: 130px;
+        margin-bottom: 30px;
+    }
+    .user-info{
+        flex-direction: column;
+    }
+    .user-name{
+        margin: unset;
+    }
+    .profile-statistics{
+        margin-top: 40px;
+    }
+    .profile-statistics ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .profile-statistics ul li{
+        margin: 0 20px;
+    }
+    .profile-statistics ul li h5{
+        font-size: 20px;
+    }
+    .profile-statistics ul li span{
+        letter-spacing: 1px;
+        font-size: 11px;
+    }
+}

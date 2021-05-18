@@ -19,29 +19,29 @@ import sectionShareXL from '../../assets/section-share-1.png'
 import sectionShareLG from '../../assets/section-share-2.png'
 
 
+import {members} from '../../dataActiveMembers'
+import {community} from '../../dataCommunity'
+import HelpCenter from '../../components/helpCenter/HelpCenter'
+
+
 function Home()
 {
     return(
         <div className="home">
-            <Header/>
-            <Hero/>
+            <header>
+                <Header/>
+            </header>
+            <section className="hero-section">
+                <Hero/>
+            </section>
+
             <section className="active-members-parent">
                 <div className="active-members-inner">
                     <div className="custom-section-padding">
                         <div className="custom-container">
-                        <LeadText/>
+                            <LeadText link= "View All Our Members" heading = "Our Active Members"  />
                         <div className="active-members-cards">
-                            <ActiveMemberCard/>
-                            <ActiveMemberCard/>
-                            <ActiveMemberCard/>
-                            <ActiveMemberCard/>
-                            <ActiveMemberCard/>
-
-                            <ActiveMemberCard/>
-                            <ActiveMemberCard/>
-                            <ActiveMemberCard/>
-                            <ActiveMemberCard/>
-                            <ActiveMemberCard/>
+                            {members.map((m,index)=> <ActiveMemberCard i={index} member={m} />)}
                         </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ function Home()
                 <div className="community-parent">
                     <div className="custom-section-padding">
                         <div className="custom-container">
-                            <LeadText/>
+                            <LeadText link= "View All Groups" heading = "Our Awesome Communities" />
                             <div className="tab-parent">
                             <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li className="nav-item" role="presentation">
@@ -82,41 +82,17 @@ function Home()
                                 <div className="tab-content" id="pills-tabContent">
                                 <div className="tab-pane fade show active" id="pills-popular" role="tabpanel">
                                     <div className="community-cards">
-                                        <CommunityCard/>
-                                        <CommunityCard/>
-                                        <CommunityCard/>
-                                        <CommunityCard/>
-
-                                        <CommunityCard/>
-                                        <CommunityCard/>
-                                        <CommunityCard/>
-                                        <CommunityCard/>
+                                        {community.map((c,index)=> <CommunityCard i={index} community = {c} />)}
                                     </div>
                                 </div>
                                 <div className="tab-pane fade" id="pills-newest" role="tabpanel">
                                 <div className="community-cards">
-                                    <CommunityCard/>
-                                    <CommunityCard/>
-                                    <CommunityCard/>
-                                    <CommunityCard/>
-
-                                    <CommunityCard/>
-                                    <CommunityCard/>
-                                    <CommunityCard/>
-                                    <CommunityCard/>
+                                    {community.map((c,index)=> <CommunityCard i={index} community = {c} />)}
                                 </div>
                                 </div>
                                 <div className="tab-pane fade" id="pills-active" role="tabpanel">
                                 <div className="community-cards">
-                                    <CommunityCard/>
-                                    <CommunityCard/>
-                                    <CommunityCard/>
-                                    <CommunityCard/>
-
-                                    <CommunityCard/>
-                                    <CommunityCard/>
-                                    <CommunityCard/>
-                                    <CommunityCard/>
+                                    {community.map((c,index)=> <CommunityCard i={index} community = {c} />)}
                                 </div>
                                 </div>
                                 </div>
@@ -198,19 +174,14 @@ function Home()
                 </div>
             </section>
 
-            <section className="help-center">
-                <div className="custom-section-padding">
-                    <div className="custom-container">
-                        <div className="help-center-inner">
-                            <h1>We are all close together</h1>
-                            <p>A problem, a question, an emergency? <br /> Do not hesitate to visit the help center, <span>we can help you</span></p>
-                            <button><i className="far fa-life-ring"></i> Help center</button>
-                        </div>
-                    </div>
-                </div>
+            <section className="help-center-parent">
+                <HelpCenter/>
             </section>
 
-            <Footer/>
+
+            <footer>
+                <Footer/>
+            </footer>
         </div>
     )
 }

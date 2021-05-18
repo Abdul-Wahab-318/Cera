@@ -7,7 +7,7 @@ import heart from '../../assets/heart.svg';
 import chat from '../../assets/conversation.svg';
 import dollar from '../../assets/dollar.svg'
 import cross from '../../assets/x-mark.svg'
-import menuCross from '../../assets/cancel.svg';
+
 function Header()
 {
     let replaceMenuIcon = ()=>{
