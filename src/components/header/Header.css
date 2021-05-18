@@ -70,6 +70,15 @@ button{
     width: 14px;
     margin-right: 10px;
 }
+.nav-item .sub-menu li button link{
+    color: var(--white); 
+}
+.nav-item .sub-menu li button a{
+    color: var(--white);
+}
+.nav-item .sub-menu li button:hover a{
+    color: var(--navBg);
+}
 .nav-item .sub-menu li button:hover{
     background-color: var(--white);
     color: var(--navBg);

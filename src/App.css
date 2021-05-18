@@ -21,6 +21,7 @@
 *{
   margin: unset;
   padding: unset;
+  text-decoration: none !important;
 }
 
 .custom-container{

@@ -1,13 +1,13 @@
 import './Header.css';
 import logo from '../../assets/logo.png'
-import downArrow from '../../assets/down-arrow.svg';
-import globe from '../../assets/globe.svg';
-import user from '../../assets/user.svg';
-import heart from '../../assets/heart.svg';
-import chat from '../../assets/conversation.svg';
+import downArrow from '../../assets/down-arrow.svg'
+import globe from '../../assets/globe.svg'
+import user from '../../assets/user.svg'
+import heart from '../../assets/heart.svg'
+import chat from '../../assets/conversation.svg'
 import dollar from '../../assets/dollar.svg'
 import cross from '../../assets/x-mark.svg'
-
+import {Link} from "react-router-dom"
 function Header()
 {
     let replaceMenuIcon = ()=>{
@@ -20,16 +20,16 @@ function Header()
                 <div className="header-inner">
                 <nav className="navbar navbar-expand-lg navbar-light ">
                     <div className="container-fluid">
-                        <button className="navbar-brand" href="#"><img src={logo} alt="" /></button>
+                        <Link to="/" className="navbar-brand" href="#"><img src={logo} alt="" /></Link>
                         <button className="navbar-toggler" onClick={replaceMenuIcon}   type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
                         <span className="navbar-toggler-icon" id="navbarToggler"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                            <button className="nav-link " aria-current="page" href="#">Home <img src= {downArrow} alt="" /></button>
+                            <Link to="/"  className="nav-link " aria-current="page" href="#">Home <img src= {downArrow} alt="" /></Link>
                             <ul className="sub-menu">
-                                <li><button>Homepage</button></li>
+                                <li><button><Link to="/">Homepage</Link></button></li>
                                 <li><button>Dashboard</button></li>
                             </ul>
                             </li>
@@ -41,7 +41,7 @@ function Header()
                                     <button><img src={globe} alt="" />Members</button>
                                     <img src={downArrow} alt="" />
                                     <ul className="sub-menu">
-                                        <li><button>Members directory</button></li>
+                                        <li><button><Link to="/memberdirectory" >Members directory</Link></button></li>
                                         <li><button>Swipe Members</button></li>
                                         <li><button>Search Members</button></li>
                                     </ul>

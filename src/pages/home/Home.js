@@ -39,9 +39,9 @@ function Home()
                 <div className="active-members-inner">
                     <div className="custom-section-padding">
                         <div className="custom-container">
-                            <LeadText link= "View All Our Members" heading = "Our Active Members"  />
+                            <LeadText key="0" link= "View All Our Members" heading = "Our Active Members"  />
                         <div className="active-members-cards">
-                            {members.map((m,index)=> <ActiveMemberCard i={index} member={m} />)}
+                            {members.map((m,index)=> <ActiveMemberCard key={index} member={m} />)}
                         </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ function Home()
                 <div className="community-parent">
                     <div className="custom-section-padding">
                         <div className="custom-container">
-                            <LeadText link= "View All Groups" heading = "Our Awesome Communities" />
+                            <LeadText key="0" link= "View All Groups" heading = "Our Awesome Communities" />
                             <div className="tab-parent">
                             <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li className="nav-item" role="presentation">
@@ -82,17 +82,17 @@ function Home()
                                 <div className="tab-content" id="pills-tabContent">
                                 <div className="tab-pane fade show active" id="pills-popular" role="tabpanel">
                                     <div className="community-cards">
-                                        {community.map((c,index)=> <CommunityCard i={index} community = {c} />)}
+                                        {community.map((c,index)=> <CommunityCard key={index} community = {c} />)}
                                     </div>
                                 </div>
                                 <div className="tab-pane fade" id="pills-newest" role="tabpanel">
                                 <div className="community-cards">
-                                    {community.map((c,index)=> <CommunityCard i={index} community = {c} />)}
+                                    {community.map((c,index)=> <CommunityCard key={index} community = {c} />)}
                                 </div>
                                 </div>
                                 <div className="tab-pane fade" id="pills-active" role="tabpanel">
                                 <div className="community-cards">
-                                    {community.map((c,index)=> <CommunityCard i={index} community = {c} />)}
+                                    {community.map((c,index)=> <CommunityCard key={index} community = {c} />)}
                                 </div>
                                 </div>
                                 </div>

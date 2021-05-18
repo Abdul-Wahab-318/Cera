@@ -12,7 +12,8 @@ import pencil from '../../assets/pencil.svg'
 import navMenu from '../../assets/tab-menu.svg'
 import HelpCenter from '../../components/helpCenter/HelpCenter'
 
-function MemberProfile() {
+function MemberProfile(props) {
+
     return (
         <div className="member-profile">
             <div className="site-wrapper">
