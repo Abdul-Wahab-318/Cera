@@ -146,6 +146,7 @@
     .profile-wallpaper-parent{
         margin-top: 49px;
     }
+
 }
 
 @media (min-width: 576px) and (max-width: 767.8px){
@@ -177,6 +178,26 @@
     .profile-statistics ul li{
         margin: 0 24px;
     }
+
+        /*-- PROFILE NAVBAR  PROFILE NAVBAR --*/
+    .nav{
+        margin-bottom: unset !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav .nav-item .nav-link{
+        padding: 27px 20px;
+    }
+    .nav .nav-item .nav-link img{
+        width: 14px;
+        margin-right: 10px;
+    }
+    
+    
+    
+    /*-- PROFILE NAVBAR  PROFILE NAVBAR --*/
+
 }
 
 
@@ -217,4 +238,24 @@
         letter-spacing: 1px;
         font-size: 11px;
     }
+    /*-- PROFILE NAVBAR  PROFILE NAVBAR --*/
+    .nav{
+        margin-bottom: unset !important;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .nav-item{
+        justify-self: center;
+    }
+    .nav .nav-item .nav-link{
+        padding: 27px 20px;
+    }
+    .nav .nav-item .nav-link img{
+        width: 14px;
+        margin-right: 10px;
+    }
+    
+    
+    
+    /*-- PROFILE NAVBAR  PROFILE NAVBAR --*/
 }

@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../../components/header/Header'
 import './MemberDirectory.css'
 import earth from '../../assets/earth-white.svg'
+import downArrowBlack from '../../assets/down-arrow-black.svg'
+import filter from '../../assets/filter.svg'
 
 
 function MemberDirectory() {
@@ -24,6 +26,7 @@ function MemberDirectory() {
                                 </button>
                                 <div className="active-select">
                                     Last Active
+                                    <img src={downArrowBlack} width="10px" alt="" />
                                 </div>
                             </div>
                             <div className="member-search">
@@ -34,7 +37,7 @@ function MemberDirectory() {
                                     </form>
                                 </div>
                                 <div className="search-directory">
-                                    
+                                    <img src={filter} alt="" />
                                 </div>
                             </div>
                         </div>
