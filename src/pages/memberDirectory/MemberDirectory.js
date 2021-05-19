@@ -4,7 +4,8 @@ import './MemberDirectory.css'
 import earth from '../../assets/earth-white.svg'
 import downArrowBlack from '../../assets/down-arrow-black.svg'
 import filter from '../../assets/filter.svg'
-
+import {members} from '../../dataActiveMembers'
+import MemberDirectoryCard from '../../components/memberDirectoryCard/MemberDirectoryCard'
 
 function MemberDirectory() {
     return (
@@ -43,6 +44,19 @@ function MemberDirectory() {
                         </div>
                     </div>
 
+                    <div className="member-directory-cards">
+                        {members.map((m,index)=> <MemberDirectoryCard key={index} member={m} />)}
+                    </div>
+
+                    <div className="page-count">
+                        <h5>Viewing 1 - 18 of 38 active members</h5>
+                        <div className="page-numbers-parent">
+                            <button className="page-number">1</button>
+                            <button className="page-number">2</button>
+                            <button className="page-number">3</button>
+                            <button className="page-number">4</button>
+                        </div>
+                    </div>
 
                     </div>
                 </section>

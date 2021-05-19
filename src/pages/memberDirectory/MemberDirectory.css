@@ -178,6 +178,54 @@
 }
 /*MEMBER SEARCH    MEMBER SEARCH*/
 
+/*MEMBER DIRECTORY CARDS   MEMBER DIRECTORY CARDS*/
+.member-directory-cards{
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap:30px;
+}
+
+
+
+/*MEMBER DIRECTORY CARDS  MEMBER DIRECTORY CARDS*/
+
+/*PAGE COUNT*/
+.page-count{
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page-count h5{
+    font-family: var(--open-sans);
+    font-weight: 500;
+    color: #8c8fa0;
+    font-size: 14px;
+    padding: 40px 0;
+    margin-bottom: unset;
+}
+.page-count .active{
+    background-color: var(--red);
+}
+.page-numbers-parent{
+    display: flex;
+}
+.page-number{
+    width: 35px;
+    height: 35px;
+    margin: 0 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: var(--white);
+    color: var(--lightBlue);
+    display: grid;
+    place-items: center;
+}
+/*PAGE COUNT*/
+
+
 
 
 

@@ -21,7 +21,7 @@ function App() {
             <Home/>
           </Route>
 
-          <Route exact path="/memberprofile">
+          <Route exact path="/memberprofile/:slug">
             <MemberProfile />
           </Route>
 

@@ -9,12 +9,12 @@ export default function ActiveMemberCard(props) {
     return (
         <div className="member-card">
             <div className="member-avatar">
-                <Link to="/memberprofile"><img src={avatar} alt="" /></Link>
+                <Link to={`/memberprofile/${member.name}`}><img src={ avatar} alt="" /></Link>
             </div>
-            <Link to ="/memberprofile"><h6 className="member-name">{member.name}</h6></Link>
+            <Link to={`/memberprofile/${member.name}`}><h6 className="member-name">{member.name}</h6></Link>
             
             <div className="member-details">
-                <Link to="/memberprofile"><span>{member.number}.</span> <span>{member.career}</span></Link>
+                <Link to={`/memberprofile/${member.name}`}><span>{member.number}.</span> <span>{member.career}</span></Link>
             </div>
         </div>
     )
