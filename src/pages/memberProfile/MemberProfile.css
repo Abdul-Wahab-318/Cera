@@ -97,10 +97,10 @@
     margin-bottom: unset !important;
 }
 
-.nav .nav-item  .active {
+.profile-navbar .nav .nav-item  .active {
     border-bottom: 4px solid var(--lightblue3) !important;
 }
-.nav .nav-item .nav-link{
+.profile-navbar .nav .nav-item .nav-link{
     font-family: var(--open-sans);
     padding: 27px 25px;
     color: var(--lightBlue2);

@@ -494,11 +494,14 @@
         gap: 30px;
     }
     .tab-parent .nav {
+        display: flex;
         flex-wrap: nowrap;
         justify-content: center;
+        width: 100%;
+        
     }
     .tab-parent .nav .nav-item{
-        width: 30%;
+        width: 100%;
         text-align: center;
     }
     .tab-parent .nav .nav-item .nav-link{

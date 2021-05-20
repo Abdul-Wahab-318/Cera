@@ -147,6 +147,9 @@ button{
     background-image: url(../../assets/menu.svg);
     background-size: 24px;
 }
+.navbar-toggler:focus {
+    box-shadow: unset;
+}
 
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
