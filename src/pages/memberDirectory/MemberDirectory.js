@@ -6,14 +6,18 @@ import downArrowBlack from '../../assets/down-arrow-black.svg'
 import filter from '../../assets/filter.svg'
 import {members} from '../../dataActiveMembers'
 import MemberDirectoryCard from '../../components/memberDirectoryCard/MemberDirectoryCard'
+import HelpCenter from '../../components/helpCenter/HelpCenter'
+import Footer from '../../components/footer/Footer'
 
 function MemberDirectory() {
     return (
         <div className="member-directory">
             <div className="site-wrapper">
+
                 <header>
                     <Header/>
                 </header>
+
                 <section className="page-content">
                     <div className="custom-container">
 
@@ -51,7 +55,7 @@ function MemberDirectory() {
                     <div className="page-count">
                         <h5>Viewing 1 - 18 of 38 active members</h5>
                         <div className="page-numbers-parent">
-                            <button className="page-number">1</button>
+                            <button className="page-number active">1</button>
                             <button className="page-number">2</button>
                             <button className="page-number">3</button>
                             <button className="page-number">4</button>
@@ -60,6 +64,15 @@ function MemberDirectory() {
 
                     </div>
                 </section>
+
+                <section className="help-center-parent">
+                    <HelpCenter/>
+                </section>
+
+                <footer>
+                    <Footer/>
+                </footer>
+
             </div>
         </div>
     )

@@ -132,6 +132,7 @@
     place-items: center;
     position: relative;
 }
+
 .search-directory:hover::after{
     opacity: 1;
 }
@@ -192,7 +193,7 @@
 
 /*PAGE COUNT*/
 .page-count{
-    padding: 0 2%;
+    padding: 0 2% 30px 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -207,6 +208,7 @@
 }
 .page-count .active{
     background-color: var(--red);
+    color: var(--white);
 }
 .page-numbers-parent{
     display: flex;
@@ -214,7 +216,7 @@
 .page-number{
     width: 35px;
     height: 35px;
-    margin: 0 6px;
+    margin: 0 5px;
     border-radius: 4px;
     font-size: 12px;
     font-weight: 500;
@@ -229,10 +231,17 @@
 
 
 
-
+@media(min-width:1200px) and (max-width: 1400px)
+{
+    .member-directory-cards{
+        grid-template-columns: repeat(4,auto);
+    }
+}
 @media (min-width: 992px) and (max-width: 1199.8px)
 {
-
+    .member-directory-cards{
+        grid-template-columns: repeat(3,auto);
+    }
     
 }
 
@@ -278,6 +287,12 @@
     }
     
     /*MEMBER SEARCH    MEMBER SEARCH*/
+
+    /*MEMBER DIRECTORY CARDS*/
+    .member-directory-cards{
+        grid-template-columns: repeat(3,auto);
+    }
+    /*MEMBER DIRECTORY CARDS*/
 }
 
 @media (min-width: 576px) and (max-width: 767.8px){
@@ -319,6 +334,11 @@
         display: none;
     }
     /*MEMBER SEARCH    MEMBER SEARCH*/
+    /*MEMBER DIRECTORY CARDS*/
+    .member-directory-cards{
+        grid-template-columns: repeat(2,auto);
+    }
+    /*MEMBER DIRECTORY CARDS*/
 }
 
 
@@ -346,6 +366,7 @@
     }
     .member-search-inner{
         flex-direction: column;
+        position: relative;
         
     }
     .total-members{
@@ -379,6 +400,11 @@
     .active-select::after{
         display: none;
     }
+    .search-directory{
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
     .search-directory::before{
         display: none;
     }
@@ -386,4 +412,13 @@
         display: none;
     }
     /*MEMBER SEARCH    MEMBER SEARCH*/
+    /*MEMBER DIRECTORY CARDS*/
+    .member-directory-cards{
+ 
+        grid-template-columns: repeat(1,auto);
+    }
+    /*MEMBER DIRECTORY CARDS*/
+    .page-count{
+        flex-direction: column;
+    }
 }

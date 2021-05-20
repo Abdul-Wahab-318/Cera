@@ -16,7 +16,7 @@ import {members} from '../../dataActiveMembers'
 
 function MemberProfile(props) {
     let {slug} = useParams()
-    let member = [...members].find((f)=> f.slug===slug)
+    let member = [...members].find((f)=> f.name===slug)
     console.log(member)
 
     return (

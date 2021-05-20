@@ -3,7 +3,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    
+    box-shadow: 0px 0px 30px 1px rgb(49 49 49 / 11%);
 }
 .member-directory-card-img{
     width: 100%;
@@ -35,6 +35,13 @@
     align-items: center;
     padding: 70px 10px 34px 10px;
 }
+.member-directory-card-details h6,a{
+    color: var(--leadText);
+}
+.member-directory-card-details a:hover{
+    color: var(--leadText);
+    
+}
 .member-directory-card-details span{
     color: var(--lightBlue);
     font-size: var(--open-sans);
@@ -47,22 +54,50 @@
     justify-content: center;
     align-items: center;
 }
-.user-icons button{
+.user-icons a{
     width: 35px;
     height: 35px;
     border-radius: 3px;
     background-color: red;
     margin: 0 6px;
+    display: grid;
+    place-items: center;
 }
-.user-icons button:first-child{
+.user-icons img{
+    width: 16px;
+}
+.user-icons a:first-child{
     background-color: var(--lightblue3);
 }
-.user-icons button:nth-child(2){
+.user-icons a:nth-child(2){
     background-color: var(--yellow);
 }
-.user-icons button:nth-child(3){
+.user-icons a:nth-child(3){
     background-color: var(--purple);
 }
-.user-icons button:nth-child(4){
+.user-icons a:nth-child(4){
     background-color: #39e9d9;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.8px)
+{
+    .member-directory-card-details {
+        padding: 70px 15px 34px 15px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width : 991.8px){
+    
+ 
+
+    .user-icons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .user-icons button {
+        width: 30px;
+        height: 30px;
+    }
 }
