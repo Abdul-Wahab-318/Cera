@@ -129,6 +129,10 @@
     .footer-copyright-inner p{
         margin-bottom: 30px;
     }
+    .footer-item ul li button:hover{
+        transform: translateX(0px);
+    }
+    
 }
 
 @media  (max-width: 575.8px) {
@@ -141,6 +145,10 @@
     .footer-brand p{
         margin-bottom: unset;
     }
+    .footer-item ul li button:hover{
+        transform: translateX(0px);
+    }
+    
     .footer-main-inner{
         grid-template-columns: 1fr;
         gap: 20px;
