@@ -9,6 +9,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import MemberDirectoryCard from './components/memberDirectoryCard/MemberDirectoryCard';
 
 
 function App() {
@@ -28,6 +29,11 @@ function App() {
           <Route exact path="/memberdirectory">
             <MemberDirectory/>
           </Route>
+
+          <Route path="/memberdirectory?member=">
+            <MemberDirectoryCard/>
+          </Route>
+
           <Route path="*">
             <h1>bruh</h1>
           </Route>

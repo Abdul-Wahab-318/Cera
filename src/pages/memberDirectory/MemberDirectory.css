@@ -67,6 +67,8 @@
     font-family: var(--open-sans);
 }
 .active-select{
+    cursor: pointer;
+    user-select: none;
    background-color: #f0f3f4;
    color: var(--lightBlue2);
    border-radius: 4px;
@@ -75,6 +77,29 @@
    font-weight: 600;
    font-family: var(--open-sans);
    position: relative;
+}
+.select-categories{
+    position: absolute;
+    z-index: 2;
+    top: 120%;
+    left: 0;
+    width: 170px;
+    
+    background-color: var(--navBg);
+}
+.select-categories div{
+    cursor: pointer;
+    color: var(--white);
+    font-family: var(--open-sans);
+    width: 100%;
+    padding: 10px;
+    transition: all 200ms ease;
+}
+.select-categories .active{
+    background-color: var(--red);
+}
+.select-categories div:hover{
+    background-color: var(--red);
 }
 .active-select img{
     margin-left: 10px;

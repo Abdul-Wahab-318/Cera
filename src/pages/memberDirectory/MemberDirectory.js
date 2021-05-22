@@ -10,6 +10,11 @@ import HelpCenter from '../../components/helpCenter/HelpCenter'
 import Footer from '../../components/footer/Footer'
 
 function MemberDirectory() {
+    let showCategory = (element)=>{
+        let categoryBtn = document.querySelector('#selectCategory')
+        
+        categoryBtn.lastChild.classList.toggle("d-none")
+    }
     return (
         <div className="member-directory">
             <div className="site-wrapper">
@@ -29,9 +34,14 @@ function MemberDirectory() {
                                     <h6>All Members</h6>
                                     <p>6</p>
                                 </button>
-                                <div className="active-select">
+                                <div className="active-select" id="selectCategory" onClick={showCategory}>
                                     Last Active
                                     <img src={downArrowBlack} width="10px" alt="" />
+                                    <div className="select-categories d-none">
+                                        <div className="active">Last Active</div>
+                                        <div>Newest Registered</div>
+                                        <div>Alphabetical</div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="member-search">
