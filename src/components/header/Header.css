@@ -30,6 +30,23 @@ button{
 .navbar-brand img:hover{
     opacity: 0.8;
 }
+.navbar .nav-item{
+    position: relative;
+}
+.navbar .nav-item::after{
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--white);
+    transition: all 400ms ease;
+}
+.navbar .nav-item:hover::after{
+    width: 100%;
+}
 .navbar-nav .nav-item .nav-link img{
     width: 12px;
     margin-left: 8px;
@@ -51,12 +68,13 @@ button{
 }
 .nav-item:hover .sub-menu{
     opacity: 1;
-    display: block;
+    visibility: visible;
 }
 .nav-item .sub-menu{
+    opacity: 0;
     z-index: 10;
-    display: none;
-    transition: all 330ms ease;
+    visibility: hidden;
+    transition: all 280ms ease;
     list-style: none;
     margin-bottom: unset;
     padding-left: unset;
