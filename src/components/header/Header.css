@@ -231,6 +231,9 @@ button{
     .navbar-toggler{
         border-color: transparent  !important; 
     }
+    .navbar .nav-item:hover::after{
+        width: 0%;
+    }
     .navbar-nav .nav-item .nav-link img{
         transform: rotate(-90deg);
     }
@@ -267,7 +270,10 @@ button{
     .header-parent .header-inner .navbar .container-fluid{
         padding: 5px 15px;
     }
-
+    
+    .navbar .nav-item:hover::after{
+        width: 0%;
+    }
     .navbar-nav .nav-item .nav-link img{
         transform: rotate(-90deg);
     }
