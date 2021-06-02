@@ -10,6 +10,7 @@ import {
   Route
 } from "react-router-dom";
 import MemberDirectoryCard from './components/memberDirectoryCard/MemberDirectoryCard';
+import Login from './pages/login/Login';
 
 
 function App() {
@@ -32,6 +33,10 @@ function App() {
 
           <Route path="/memberdirectory?member=">
             <MemberDirectoryCard/>
+          </Route>
+
+          <Route path="/login">
+            <Login/>
           </Route>
 
           <Route path="*">

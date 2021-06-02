@@ -146,12 +146,16 @@ button{
     color: var(--white);
     font-size: 14.4px;
     font-weight: 500;
-    padding: 7px 22px;
+    padding: 6px 22px;
     border-radius: 5px;
     border: 2px solid var(--navLoginBtnBorder);
     transition: all 400ms ease;
 }
+.login-btn a{
+    color: var(--white);
+}
 .login-btn:hover{
+    color: var(--white);
     border: 2px solid var(--white);
 }
 

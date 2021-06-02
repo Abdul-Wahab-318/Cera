@@ -69,7 +69,7 @@ function Header()
                             </ul>
                             </li>
                         </ul>
-                        <button className="login-btn">Login</button>
+                        <Link to="/login" className="login-btn">Login</Link>
                         </div>
                     </div>
                     </nav>

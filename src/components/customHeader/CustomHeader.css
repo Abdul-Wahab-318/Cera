@@ -1,0 +1,40 @@
+.custom-header-parent{
+    margin-top: 73px;
+    background-color: var(--purple);
+    padding: 4% 0;
+    display: flex;
+    justify-content: center;
+}
+.custom-header-caption{
+    text-align: center;
+}
+.custom-header-parent .custom-header-caption a , .custom-header-parent .custom-header-caption span{
+    padding: 0 12px;
+    color: #AFB2C1;
+    opacity: 0.9;
+    font-family: var(--open-sans);
+    font-weight: 600;
+    transition: all 300ms ease;
+}
+.custom-header-parent .custom-header-caption a:hover{
+    filter: brightness(1.3);
+}
+.custom-header-caption div{
+    position: relative;
+}
+.custom-header-caption div::after{
+    position: absolute;
+    content: '';
+    left: 51%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #AFB2C1;
+}
+.custom-header-caption h1{
+    color: var(--white);
+    font-size: 34px;
+    margin: 16px 0 0 0;
+}
