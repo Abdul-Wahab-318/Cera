@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import MemberDirectoryCard from './components/memberDirectoryCard/MemberDirectoryCard';
 import Login from './pages/login/Login';
+import Register from './pages/register/Register';
 
 
 function App() {
@@ -37,6 +38,10 @@ function App() {
 
           <Route path="/login">
             <Login/>
+          </Route>
+          
+          <Route path="/register">
+            <Register/>
           </Route>
 
           <Route path="*">

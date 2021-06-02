@@ -1,23 +1,25 @@
-.login-parent header .navbar{
-    background-color: var(--purple) ;
+.register-parent .custom-header-component .custom-header-parent{
+    background-color: var(--navBg);
 }
-
-.login-form-parent{
+.gap-10{
+    gap: 10px;
+}
+.register-form-parent{
     padding: 3% 0;
     background-color: var(--sectionBg);
 }
-.login-form-parent .custom-container{
+.register-form-parent .custom-container{
     max-width: 910px;
     padding: 50px 15px;
 }
-.login-form-inner{
+.register-form-inner{
     max-width: 500px;
     margin: 0 auto;
     border-radius: 6px;
     box-shadow: 0 2px 10px #e2e2e2;
 }
 
-.login-form-inner .login-form-cover{
+.register-form-inner .register-form-cover{
     height: 200px;
     background-image: url(../../assets/geopattern.png);
     background-color: white;
@@ -27,7 +29,7 @@
     align-items: flex-end;
     justify-content: flex-start;
 }
-.login-form-inner .login-form-cover div{
+.register-form-inner .register-form-cover div{
     background-color: rgba(0,0,0,.45);
     color: var(--white);
     letter-spacing: 3px;
@@ -37,40 +39,40 @@
     font-family: var(--open-sans);
 }
 
-.login-form-fields{
+.register-form-fields{
     padding: 35px 45px;
     background-color: var(--white);
 }
-.login-form-field h6{
+.register-form-field h6{
     color: #898989;
     font-weight: 400;
     font-size: 14px;
     font-family: var(--open-sans);
     margin-bottom: 15px;
 }
-.login-form-field input{
+.register-form-field input{
     width: 100%;
     border: 1px solid #eee;
     padding: 8px 10px;
     transition: all 300ms ease;
 }
-.login-form-field input:focus{
+.register-form-field input:focus{
     box-shadow: 0 0 0px 2px var(--lightblue3);
     outline: none;
 }
-.login-form-field:nth-child(3){
+.register-form-field:nth-child(3){
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.login-form-field:nth-child(3) button{
+.register-form-field:nth-child(3) button{
     color: var(--red);
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 1px;
 }
-.login-form-field:nth-child(3) input{
+.register-form-field:nth-child(3) input{
     width: unset;
     cursor: pointer;
     position: absolute;
@@ -80,7 +82,7 @@
     width: 18px;
 
 }
-.login-form-field:nth-child(3) input::before{
+.register-form-field:nth-child(3) input::before{
 
     position: absolute;
     content: '';
@@ -92,7 +94,7 @@
     background-color: transparent;
 }
 
-.login-form-field:nth-child(3) label{
+.register-form-field:nth-child(3) label{
     cursor: pointer;
     position: relative;
     padding-left: 30px;
@@ -103,10 +105,10 @@
     display: flex;
     align-items: center;
 }   
-.login-form-field:last-child {
+.register-form-field:last-child {
     margin-top: 28px;
 }
-.login-form-field:last-child button{
+.register-form-field:last-child button{
     padding: 16px 12px;
     border-radius: 3px;
     width: 100%;
@@ -119,57 +121,7 @@
     letter-spacing: 1px;
     transition: all 300ms ease;
 }
-.login-form-field:last-child button:hover{
+.register-form-field:last-child button:hover{
     background-color: rgba(234,61,86,1);
     box-shadow: 0px 1px 0 5px rgba(234,61,86,0.5);
-}
-
-
-@media (min-width: 768px) and (max-width: 991.8px){
-
-    .login-parent header .navbar{
-        background-color: var(--navBg) ;
-    }
-    .custom-header-component .custom-header-parent{
-        margin-top: 50px;
-    }
-
-}
-
-@media (min-width: 576px) and (max-width: 767.8px){
-
-    .login-parent header .navbar{
-        background-color: var(--navBg) ;
-    }
-    .custom-header-component .custom-header-parent{
-        margin-top: 50px;
-    }
-
-}
-
-@media (max-width: 575.8px){
-
-    .login-parent header .navbar{
-        background-color: var(--navBg) ;
-    }
-    .custom-header-parent{
-        padding: 50px 0 !important;
-    }
-    .custom-header-parent .custom-header-caption h1{
-        font-size: 28px;
-    }
-    .custom-header-component .custom-header-parent{
-        margin-top: 50px;
-    }
-    .login-form-fields{
-        padding: 35px 25px;
-    }
-    .login-form-field:nth-child(3){
-        flex-direction: column;
-    }
-    .login-form-field:nth-child(3) label{
-        justify-self: flex-start;
-        align-self: flex-start;
-        margin-bottom: 28px;
-    }
 }
