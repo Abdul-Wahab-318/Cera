@@ -2,6 +2,8 @@ import React from 'react'
 import './Register.css'
 import Header from '../../components/header/Header'
 import CustomHeader from '../../components/customHeader/CustomHeader'
+import HelpCenter from '../../components/helpCenter/HelpCenter'
+import Footer from '../../components/footer/Footer'
 
 
 function Register() {
@@ -22,35 +24,52 @@ function Register() {
                             </div>
                             <form className="register-form-fields">
                                 <div className="register-form-field mb-4 d-flex gap-10">
-                                    <div>
+                                    <div className="width-50">
                                     <h6>First Name</h6>
                                     <input type="text" />
                                     <span className="error-handler"></span>
                                     </div>
-                                    <div>
+                                    <div className="width-50">
                                     <h6>Last Name</h6>
                                     <input type="text" />
                                     <span className="error-handler"></span>
                                     </div>
                                 </div>
                                 <div className="register-form-field mb-4">
-                                    <h6>Password</h6>
-                                    <input type="text" />
+                                    <h6>Email</h6>
+                                    <input type="email" />
                                     <span className="error-handler"></span>
                                 </div>
-                                <div className="register-form-field">
-                                    <label htmlFor="rememberme"><input type="checkbox" name="" id="rememberme" />Remember me</label>
-                                    <button>Forgot Password?</button>
+                                <div className="register-form-field mb-4 d-flex gap-10">
+                                    <div className="width-50">
+                                        <h6>Password</h6>
+                                        <input type="password" />
+                                        <span className="error-handler"></span>
+                                    </div>
+                                    <div className="width-50">
+                                        <h6>Repeat Password</h6>
+                                        <input type="password" />
+                                        <span className="error-handler"></span>
+                                    </div>
+
                                 </div>
                                 <div className="register-form-field">
-                                    <button>Log IN</button>
+                                    <label htmlFor="rememberme"><input type="checkbox" name="" id="rememberme" />I agree with terms and conditions</label>
+                                </div>
+                                <div className="register-form-field">
+                                    <button onClick={(e)=> e.preventDefault()}>Create account</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </section>
+                <div className="help-center-component">
+                    <HelpCenter/>
+                </div>
             </main>
-
+            <footer>
+                <Footer/>
+            </footer>
         </div>
     )
 }

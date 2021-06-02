@@ -30,7 +30,7 @@ function Header()
                             <Link to="/"  className="nav-link " aria-current="page" href="#">Home <img src= {downArrow} alt="" /></Link>
                             <ul className="sub-menu">
                                 <li><button><Link to="/">Homepage</Link></button></li>
-                                <li><button>Dashboard</button></li>
+                                <li><button><Link to="/register">Register</Link></button></li>
                             </ul>
                             </li>
                             <li className="nav-item">
